@@ -55,13 +55,13 @@
 // |       |     |     |      |      |      |                   |      |       |   ^   |      |       |       |
 // |       |     |     |      |      |      |                   |      |   <-  |   v   |  ->  |       |       |
 // |       |     |     |      |      |      |        |  |       |      |       |       |      |       |       |
-//                     |      |      |      |        |  |       |      |       |       |
+//                     |      |      |      |        |  |       |      | RGUI  |       |
             bindings = <
-&trans &kp C_BRI_DN &kp C_BRI_UP &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP                       &trans  &trans    &none     &trans    &trans    &trans
-&trans &trans       &trans       &trans       &trans &trans                       &trans  &none     &kp UP    &none     &trans    &trans
-&trans &trans       &trans       &trans       &trans &trans                       &none   &kp LEFT  &kp DOWN  &kp RIGHT &none     &trans
-&trans &trans       &trans       &trans       &trans &trans   &trans    &trans    &trans  &none     &none     &none     &trans    &trans
-                                 &trans       &trans &trans   &trans    &trans    &trans  &trans    &trans
+&trans &kp C_BRI_DN &kp C_BRI_UP &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP                 &trans  &trans    &none     &trans    &trans    &trans
+&trans &trans       &trans       &trans     &trans       &trans                       &trans  &none     &kp UP    &none     &trans    &trans
+&trans &trans       &trans       &trans     &trans       &trans                       &none   &kp LEFT  &kp DOWN  &kp RIGHT &none     &trans
+&trans &trans       &trans       &trans     &trans       &trans   &trans    &trans    &trans  &none     &none     &none     &trans    &trans
+                                 &trans     &trans       &trans   &trans    &trans    &trans  &kp RGUI    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
